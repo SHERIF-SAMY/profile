@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherif Samy - AI & Data Scientist</title>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2/dist/icons.js"></script>
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .ph-icon {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #6366F1, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-hover:hover {
+            background-image: linear-gradient(to right, #6366F1, #8B5CF6);
+            color: white;
+        }
+
+        /* Dark mode styles */
+        .dark body {
+            background-color: #0F172A;
+            color: #E2E8F0;
+        }
+        .dark .bg-slate-50 {
+            background-color: #1E293B;
+        }
+        .dark .text-slate-800 {
+            color: #E2E8F0;
+        }
+        .dark .text-slate-500 {
+            color: #94A3B8;
+        }
+        .dark .text-slate-600 {
+            color: #CBD5E1;
+        }
+        .dark .text-slate-700 {
+            color: #F1F5F9;
+        }
+        .dark .text-slate-900 {
+            color: #F1F5F9;
+        }
+        .dark .border-slate-200 {
+            border-color: #475569;
+        }
+        .dark .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+        .dark .bg-white {
+            background-color: #1E293B;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-50">
+
+    <!-- Header & Navigation -->
+    <header class="py-4 md:py-6 shadow-md dark:shadow-none bg-white dark:bg-slate-900 fixed top-0 left-0 w-full z-20">
+        <div class="container mx-auto px-4 md:px-6 flex justify-between items-center">
+            <a href="#hero" class="text-xl md:text-2xl font-bold text-gradient">Sherif Samy</a>
+            <nav class="flex items-center gap-6">
+                <ul class="hidden md:flex gap-6 font-medium text-slate-500 dark:text-slate-400">
+                    <li><a href="#hero" class="hover:text-blue-500 transition-colors duration-200">Home</a></li>
+                    <li><a href="#about" class="hover:text-blue-500 transition-colors duration-200">About</a></li>
+                    <li><a href="#skills" class="hover:text-blue-500 transition-colors duration-200">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-500 transition-colors duration-200">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500 transition-colors duration-200">Contact</a></li>
+                </ul>
+                <div class="flex items-center gap-4">
+                    <button id="theme-toggle" class="bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-300 px-3 py-1.5 rounded-full font-semibold transition-all duration-300 flex items-center gap-2">
+                        <i class="ph ph-sun-dim ph-icon text-lg"></i>
+                        <span class="hidden md:inline">Light Mode</span>
+                    </button>
+                    <a href="https://github.com/sherifsamy" target="_blank" class="text-xl hover:text-blue-500 transition-colors duration-200 dark:text-slate-300 dark:hover:text-blue-500">
+                        <i class="ph ph-github-logo ph-icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sherifsamy" target="_blank" class="text-xl hover:text-blue-500 transition-colors duration-200 dark:text-slate-300 dark:hover:text-blue-500">
+                        <i class="ph ph-linkedin-logo ph-icon"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="flex flex-col items-center justify-center min-h-screen pt-24 pb-12 text-center bg-slate-50 dark:bg-slate-900">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col items-center gap-6">
+                <!-- Profile Picture (Placeholder) -->
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-slate-300 dark:border-slate-700 overflow-hidden shadow-xl fade-in">
+                    <img src="C:\Users\Asus\Desktop\PROFILE\sherif prof .jpg" alt="Sherif Samy" class="w-full h-full object-cover">
+                </div>
+                <div class="fade-in">
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-2 text-gradient">Sherif Samy</h1>
+                    <p class="text-lg md:text-xl font-medium text-slate-600 dark:text-slate-300">AI & Data Scientist</p>
+                    <p class="mt-4 max-w-2xl mx-auto text-base md:text-lg text-slate-700 dark:text-slate-400 leading-relaxed">
+                        Highly skilled AI & Data Scientist with 2+ years of hands-on experience in machine learning, deep learning, and data analytics. Specialized in NLP and computer vision, with a proven ability to build and deploy end-to-end AI solutions.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 mt-6 fade-in md:delay-200">
+                    <a href="#projects" class="inline-flex items-center justify-center font-bold px-6 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105
+                        bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:shadow-xl">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center font-bold px-6 py-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105
+                        bg-white text-slate-900 border border-slate-300 hover:bg-slate-100 dark:bg-slate-700 dark:text-white dark:border-slate-600 dark:hover:bg-slate-600">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Sections -->
+    <main class="container mx-auto px-4 md:px-6 pb-12">
+        <hr class="border-t border-slate-200 dark:border-slate-800 my-8">
+
+        <!-- About Section -->
+        <section id="about" class="py-12 md:py-16">
+            <h2 class="text-2xl md:text-4xl font-bold text-center text-slate-900 dark:text-white">About Me</h2>
+            <p class="text-center text-slate-500 dark:text-slate-400 mt-2 mb-10">Learn more about my background, experience, and passion</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div class="text-left">
+                    <h3 class="text-3xl font-semibold text-slate-800 dark:text-white mb-4">Transforming Data into Insights</h3>
+                    <p class="text-base md:text-lg text-slate-700 dark:text-slate-400 leading-relaxed">
+                        I am a passionate AI & Data Scientist with a strong background in machine learning, statistical modeling, and data analysis. I'm currently pursuing my Bachelor's degree in Computer and Information Science at Kafr El Sheikh University.
+                    </p>
+                    <p class="text-base md:text-lg text-slate-700 dark:text-slate-400 leading-relaxed mt-4">
+                        My expertise spans across various domains including natural language processing, computer vision, and predictive modeling. I have hands-on experience with cutting-edge tools and frameworks like TensorFlow and Hugging Face, enabling me to build, fine-tune, and deploy end-to-end AI solutions.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-100 dark:bg-slate-800 p-6 rounded-lg shadow-md text-center">
+                        <h4 class="text-3xl font-bold text-blue-600">2+</h4>
+                        <p class="text-slate-700 dark:text-slate-300 mt-1">Years Experience</p>
+                    </div>
+                    <div class="bg-slate-100 dark:bg-slate-800 p-6 rounded-lg shadow-md text-center">
+                        <h4 class="text-3xl font-bold text-blue-600">4+</h4>
+                        <p class="text-slate-700 dark:text-slate-300 mt-1">Projects</p>
+                    </div>
+                    <div class="bg-slate-100 dark:bg-slate-800 p-6 rounded-lg shadow-md text-center">
+                        <h4 class="text-3xl font-bold text-blue-600">1st</h4>
+                        <p class="text-slate-700 dark:text-slate-300 mt-1">Place Winner</p>
+                    </div>
+                    <div class="bg-slate-100 dark:bg-slate-800 p-6 rounded-lg shadow-md text-center">
+                        <h4 class="text-3xl font-bold text-blue-600">10+</h4>
+                        <p class="text-slate-700 dark:text-slate-300 mt-1">Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="border-t border-slate-200 dark:border-slate-800 my-8">
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-12 md:py-16">
+            <h2 class="text-2xl md:text-4xl font-bold text-center text-slate-900 dark:text-white">Skills & Expertise</h2>
+            <p class="text-center text-slate-500 dark:text-slate-400 mt-2 mb-10">Technologies and tools I use to bring data science projects to life</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Programming & Data Management -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center gap-2 text-slate-700 dark:text-white">
+                        <i class="ph ph-brackets-angle ph-icon text-2xl text-blue-500"></i> Programming & Data Management
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Python</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">SQL</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">DBT</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">NumPy</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Pandas</span>
+                    </div>
+                </div>
+                <!-- Machine Learning & Deep Learning -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center gap-2 text-slate-700 dark:text-white">
+                        <i class="ph ph-brain ph-icon text-2xl text-blue-500"></i> Machine Learning & Deep Learning
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">CNNs</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">RNNs</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Transformers</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">NLP</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">NLTK</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">TensorFlow</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Hugging Face</span>
+                    </div>
+                </div>
+                <!-- Data Analysis & Visualization -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center gap-2 text-slate-700 dark:text-white">
+                        <i class="ph ph-chart-bar ph-icon text-2xl text-blue-500"></i> Data Analysis & Visualization
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Power BI</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Excel</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Matplotlib</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Seaborn</span>
+                    </div>
+                </div>
+                <!-- Big Data & Cloud -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center gap-2 text-slate-700 dark:text-white">
+                        <i class="ph ph-cloud ph-icon text-2xl text-blue-500"></i> Big Data & Cloud
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">ONNX</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">ONNX Runtime</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Azure</span>
+                    </div>
+                </div>
+                <!-- Other tools -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-semibold mb-3 flex items-center gap-2 text-slate-700 dark:text-white">
+                        <i class="ph ph-wrench ph-icon text-2xl text-blue-500"></i> Tools & Platforms
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Git</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">GitHub</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Linux</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Jupyter</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">Kaggle</span>
+                        <span class="bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 text-sm font-medium px-3 py-1.5 rounded-full">HuggingFace</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-t border-slate-200 dark:border-slate-800 my-8">
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-12 md:py-16">
+            <h2 class="text-2xl md:text-4xl font-bold text-center text-slate-900 dark:text-white">Featured Projects</h2>
+            <p class="text-center text-slate-500 dark:text-slate-400 mt-2 mb-10">A showcase of my data science and machine learning projects</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- AI Student Helper Web App -->
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300 transform hover:scale-105">
+                    <img src="C:\Users\Asus\Desktop\PROFILE\AI_student_helper.png.crdownload" alt="AI student helper web application interface" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-slate-700 dark:text-white">AI Student Helper Web App</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-4 text-sm leading-relaxed">
+                            Built a multi-function web app for summarization, Q&A, and translation using Hugging Face models, with a user-friendly UI developed with Gradio.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs px-2 py-1 rounded-full font-medium">Hugging Face</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs px-2 py-1 rounded-full font-medium">Gradio</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs px-2 py-1 rounded-full font-medium">Web App</span>
+                        </div>
+                        <div class="flex gap-4 text-sm items-center">
+                            <a href="#" class="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 hover:underline">
+                                <i class="ph ph-code-simple ph-icon"></i> Code
+                            </a>
+                            <a href="#" class="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 hover:underline">
+                                <i class="ph ph-arrow-square-out ph-icon"></i> Demo
+                            </a>
+                            <button class="text-blue-500 flex items-center gap-1.5" onclick="generateIdea('Built a multi-function web app for summarization, Q&A, and translation using Hugging Face models, with a user-friendly UI developed with Gradio.', event)">
+                                <i class="ph ph-sparkle ph-icon"></i>
+                                <span>What's Next?</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Multilingual Sentiment Analysis System -->
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/2563EB/fff?text=Sentiment+Analysis+Dashboard" alt="Sentiment analysis dashboard with charts and graphs" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-slate-700 dark:text-white">Multilingual Sentiment Analysis</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-4 text-sm leading-relaxed">
+                            Led a team to develop sentiment models (SVM, CNN) for Arabic, English, and Arabizi texts, creating a live dashboard in Streamlit for real-time insights.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs px-2 py-1 rounded-full font-medium">NLP</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs px-2 py-1 rounded-full font-medium">CNN</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs px-2 py-1 rounded-full font-medium">Streamlit</span>
+                        </div>
+                        <div class="flex gap-4 text-sm items-center">
+                            <a href="#" class="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 hover:underline">
+                                <i class="ph ph-code-simple ph-icon"></i> Code
+                            </a>
+                            <a href="#" class="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 hover:underline">
+                                <i class="ph ph-arrow-square-out ph-icon"></i> Demo
+                            </a>
+                            <button class="text-blue-500 flex items-center gap-1.5" onclick="generateIdea('Led a team to develop sentiment models (SVM, CNN) for Arabic, English, and Arabizi texts, creating a live dashboard in Streamlit for real-time insights.', event)">
+                                <i class="ph ph-sparkle ph-icon"></i>
+                                <span>What's Next?</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI-Powered Car Trading Platform -->
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700 overflow-hidden transition-all duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/2563EB/fff?text=Car+Trading" alt="Car trading platform user interface" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-slate-700 dark:text-white">AI-Powered Car Trading Platform</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-4 text-sm leading-relaxed">
+                            Developed a platform for buying and selling cars with price evaluation using a Linear Regression model, optimized with ONNX for real-time predictions.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs px-2 py-1 rounded-full font-medium">Linear Regression</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs px-2 py-1 rounded-full font-medium">ONNX</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs px-2 py-1 rounded-full font-medium">Real-time</span>
+                        </div>
+                        <div class="flex gap-4 text-sm items-center">
+                            <a href="#" class="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 hover:underline">
+                                <i class="ph ph-code-simple ph-icon"></i> Code
+                            </a>
+                            <a href="#" class="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 hover:underline">
+                                <i class="ph ph-arrow-square-out ph-icon"></i> Demo
+                            </a>
+                            <button class="text-blue-500 flex items-center gap-1.5" onclick="generateIdea('Developed a platform for buying and selling cars with price evaluation using a Linear Regression model, optimized with ONNX for real-time predictions.', event)">
+                                <i class="ph ph-sparkle ph-icon"></i>
+                                <span>What's Next?</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="idea-output" class="hidden md:col-span-2 lg:col-span-3 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-semibold mb-2 text-slate-700 dark:text-white">New AI Project Idea</h3>
+                    <div id="idea-content" class="text-slate-600 dark:text-slate-400"></div>
+                </div>
+            </div>
+        </section>
+        <hr class="border-t border-slate-200 dark:border-slate-800 my-8">
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 md:py-16">
+            <h2 class="text-2xl md:text-4xl font-bold text-center text-slate-900 dark:text-white">Let's Connect</h2>
+            <p class="text-center text-slate-500 dark:text-slate-400 mt-2 mb-10">I'm always open to talking about creative ideas and new projects. Feel free to reach out to me via any of the following channels.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Left Side: Contact Info & Follow Me -->
+                <div class="flex flex-col gap-6">
+                    <!-- Contact Info -->
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Contact Info</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-full text-blue-500">
+                                    <i class="ph ph-map-pin ph-icon text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-700 dark:text-white">Location</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">Egypt, Kafr El Sheikh</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-full text-blue-500">
+                                    <i class="ph ph-phone ph-icon text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-700 dark:text-white">Phone</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-sm">+201093045839</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-full text-blue-500">
+                                    <i class="ph ph-envelope ph-icon text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-slate-700 dark:text-white">Email</h4>
+                                    <a href="mailto:shryfsamy309@gmail.com" class="text-slate-600 dark:text-slate-400 hover:underline text-sm">shryfsamy309@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Follow Me Section -->
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Follow Me</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="https://github.com/sherifsamy" target="_blank" class="flex items-center gap-2 bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-white p-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors duration-200">
+                                <i class="ph ph-github-logo ph-icon text-2xl"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sherifsamy" target="_blank" class="flex items-center gap-2 bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-white p-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors duration-200">
+                                <i class="ph ph-linkedin-logo ph-icon text-2xl"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://www.kaggle.com/sherifsamy" target="_blank" class="flex items-center gap-2 bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-white p-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors duration-200">
+                                <i class="ph ph-folder-notch ph-icon text-2xl"></i>
+                                <span>Kaggle</span>
+                            </a>
+                            <a href="mailto:shryfsamy309@gmail.com" class="flex items-center gap-2 bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-white p-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors duration-200">
+                                <i class="ph ph-envelope ph-icon text-2xl"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Send a Message</h3>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Name" class="w-full p-3 rounded-lg bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white">
+                            <input type="email" placeholder="Email" class="w-full p-3 rounded-lg bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white">
+                        </div>
+                        <input type="text" placeholder="Subject" class="w-full p-3 rounded-lg bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white">
+                        <textarea placeholder="Tell me more about your project or question..." rows="5" class="w-full p-3 rounded-lg bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white"></textarea>
+                        <button type="submit" class="w-full p-3 rounded-lg text-white font-bold transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-indigo-500 to-purple-600 hover:shadow-xl">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Message Box -->
+        <div id="message-box" class="message-box-container hidden">
+            <div class="message-box">
+                <h4 id="message-box-title"></h4>
+                <p id="message-box-text"></p>
+                <button onclick="closeMessageBox()">OK</button>
+            </div>
+        </div>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 md:py-8 text-center rounded-t-3xl shadow-inner">
+        <p>&copy; 2025 Sherif Samy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+        
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            root.classList.add(savedTheme);
+            updateToggleButton(savedTheme);
+        } else {
+            // Default to dark mode if no preference is saved
+            root.classList.add('dark');
+            updateToggleButton('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (root.classList.contains('dark')) {
+                root.classList.remove('dark');
+                root.classList.add('light');
+                localStorage.setItem('theme', 'light');
+                updateToggleButton('light');
+            } else {
+                root.classList.remove('light');
+                root.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                updateToggleButton('dark');
+            }
+        });
+
+        function updateToggleButton(theme) {
+            const icon = themeToggle.querySelector('i');
+            const text = themeToggle.querySelector('span');
+            if (theme === 'dark') {
+                icon.className = 'ph ph-moon ph-icon text-lg';
+                text.textContent = 'Dark Mode';
+            } else {
+                icon.className = 'ph ph-sun-dim ph-icon text-lg';
+                text.textContent = 'Light Mode';
+            }
+        }
+    </script>
+</body>
+</html>
